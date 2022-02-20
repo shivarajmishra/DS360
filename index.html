@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h2 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h3 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h4 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h5 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.section h6 {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Shiva Raj Mishra</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+</div>
+
+
+<blockquote>
+<p>I am a researcher in epidemiology, causal inference and health data science at the <a href="https://mspgh.unimelb.edu.au/centres-institutes/centre-for-epidemiology-and-biostatistics">Center for Epidemiology and Biostatistics, Melbourne School of Population and Global Health </a>, working across the <a href="https://findanexpert.unimelb.edu.au/profile/890138-shiva-raj-mishra">University of Melbourne</a>. I combine methodological research in causal inference, predictive and simulation modelling in various substantive areas of interests including circulatory health, implementation research and access to medicine policies. I further have interest in leveraing 'big' data for evaluation of complex interventions in public health. Few of my projects have been described in the section below. For more see my <a href="https://scholar.google.com.au/citations?user=YJdY1dgAAAAJ&hl=en">Google Scholar</a>, <a href="https://github.com/shivarajmishra">GitHub</a> &amp; <a href="https://twitter.com/ShivaRajMisra">Twitter</a> (<span class="citation">@shivarajmisra</span>).</p>
+</blockquote>
+<hr />
+<div id="mediation-analysis" class="section level4">
+<h4>Life course epidemiology (aging research)</h4>
+<p>As part of my doctoral work, I examined the association between several reproductive markers of aging (e.g. age at menarche, age at menopause, reproductive lifespan) in the context of cardiovascular health. In work with my doctoral advisers Prof. Gita D. Mishra, Dr. Michael Waller, Dr. Hsin-Fang Chung, we explored the added predictive value of a composite index of oestrogen exposure against several other indices, describing the influence of length of oestorgen exposure on stroke risk at midlife:</p>
+<ul>
+<li><a href="https://www.internationaljournalofcardiology.com/article/S0167-5273(20)34270-4/fulltext">Paper in <em>International Journal of Cardiology</em></a></li>
+</ul>
+<p>This work is derived from our earlier work where we proposed several algorithmic definitions of oestrogen exposure derived using a comprehensive systematic review of the existing literature:</p>
+<ul>
+<li><a href="https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1111/1471-0528.16524">A paper in <em>International Journal of Obstetrics and Gynecology</a></li>
+<li>Further application in the context of CVD risk factors<a href="https://www.maturitas.org/article/S0378-5122(22)00013-5/fulltext"> here</a></li>
+</ul>
+<hr />
+</div>
+<div id="survival-analysis-with-multiple-causes-of-death" class="section level4">
+<h4>Survival analysis with cardiovascular events and mortality</h4>
+<p>During my master’s program (2016-2017) and Ph.D. program (2017-2020), I have developed substantial expertise in longitudinal data analysis in the context of time-to-event data (e.g., survival analysis), with application in cardiovascular events and mortality. These tasks required a substantial experience in data management and advanced programming experience in SAS.</p>
+<ul>
+<li>Paper in <em>JAMA Cardiology</em> (2020 Dec 1;5(12):1410-8): <a href="https://jamanetwork.com/journals/jamacardiology/article-abstract/2770502">journal link</a>, <a href="https://cdn.jamanetwork.com/ama/content_public/journal/cardiology/938607/hoi200063supp1_prod_1607652802.48901.pdf?Expires=1648342830&Signature=a9mzsd8gwkcZ3nb0TMKF6XasTW1GcVt68FA5CICN-JNq-OVEwmWYvJZIKXUJnzD-WApos7JxAEyZY6eZWsBIzvo4x7NXEWILEJPCqzhGXuAzDmpV9ujJjRekrQkxhf52C9MNa0ve2auagBVebShTMAFucxwNsk0OkW-ApO9~8~knadW2n4YnpwirhK99OZSQS3c6nGp6-nZWAFUQ4Q9tk3KzIFUmYVdbfz4RsLLqWQygb7Fu6OAPpFe2H2idF4rgCwZlhSJHWEUrG8ihReOSI2i71Wjz7cnGQuoeOvMpNAhMBuko1mggDPlBrLvGYW0LuxG~cnoGUy4A~GDn8Pq25w__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA">eAppendix</a> and <a href="https://www.nytimes.com/2020/09/17/well/live/reproductive-life-span-may-affect-a-womans-heart-risks.html">a coverage in NewYork Times</a></li>
+<li>Related papers:
+<ul>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165032721010260">Paper in <em>Journal of Affective Disorders</em></a></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="understanding-variations-in-disease-occurrence-across-populations" class="section level4">
+<h4>Heterogeneity in disease occurrence across populations</h4>
+<p>Building cutting-edge statistical methods, with colleagues we want to further query into a classical problem in epidemiology, "why poor get sick, and why sick gets poor’? This urged us to go beyond the traditional drivers of ill-health and explore the 'causes of causes' using life-course perspective. This project has three objectives:</p>
+<ul>
+<li>To investigate the burden of non-communicable diseases and its risk factors at entire-population level, using the nationally representative data globally.</li>
+<li>To explore geographic and socio-economic disparities in burden of non-communicable disease and their risk factors.</li>
+<li>To pool data from local and global sources to examine i) trends in NCDs and risk factors, and ii) health service utilization.</li>
+<li>Project description in <a href="https://www.researchgate.net/project/Geographic-and-socio-economic-disparities-and-trends-in-non-communicable-diseases-a-geopolitical-analyses">ResearchGate</a> website.</li>
+</ul>
+<p>With colleagues, we used both simple as well as sophisticated statistical techniques to explore geographical variations in disease and risk factors, accompanied by geographical mapping and visualization. Further we compared both single-level and multi-level modelling technique to measures the differences between individual level and population level factors in public health.</p>
+<hr />
+</div>
+<div id="measuring-socioeconomic-inequalities-in-health" class="section level4">
+<h4>Intervention modelling to measure potential health gains </h4>
+<p>Reducing health disparities has become a major public health agenda in Australia and globally. However, policy options on how best to achieve this goal is not clearly understood. Simulation modelling using varying sources of data (e.g., registries, panel data study) has the potential to bridge this gap; this approach can produce unique evidence on the evidence base around the poverty reducing impact of cross-sectoral interventions affecting cardiovascular health. Therefore, exploring the effectiveness of several ‘what if’ counterfactual scenarios can guide future implementation of these policies.</p>
+<ul>
+<li>Paper being drafted (citation: <em>Mishra SR et al. Would interventions to reduce cold housing reduce health inequalities? A modelling study. Population Intervention Unit, Center for Epidemiology and Biostatistics, University of Melbourne.2022</em>): <a href="https://github.com/ihmeuw/vivarium">using VIVARIUM framework</a></li>
+<li><a href="https://academic.oup.com/ije/article/49/5/1624/5920732">Methodological illustration </a>by T. Blakey</li>
+<li>Modelling framework with Python <a href="https://github.com/ihmeuw/vivarium">code</a></li>
+</ul>
+<hr />
+</div>
+<div id="measuring-socioeconomic-inequalities-in-health" class="section level4">
+<h4>Community-based interventions in public health</h4>
+<p>Community based interventions have huge potential to contribute to public health, in low resource setting. With colleagues, at COBIN study, we measured the effectiveness of community-based strategies for CVD risk factors management in Nepal. The study showed that the intervention effectively reduced the systolic blood pressure by 4.90 mm Hg (2.00 to 7.78) among hypertensive patients from a resource-limited setting in Nepal. The study has provided important insights for development of community-based strategies for CVD risk factors management in South Asia.</p>
+<ul>
+<li>Paper in <em>Lancet Global Health</em> (2018 Jan 1;6(1):e66-73)<a href="https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(17)30411-4/fulltext">: link</a></li>
+<li>Paper in <em>JAMA Network Open</em> (2021 Feb 1;4(2):e2035799)<a href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2775660">: link</a></li>
+<li>A commentary in our<a href="https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(18)30034-2/fulltext">: paper</a></li>
+<li>Training material and resources for diabetes management at community level<a href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-5562-y">: link</a></li>
+<hr />
+</div>
+<div id="measuring-socioeconomic-inequalities-in-health" class="section level4">
+<h4>Freelace writing in health (e.g. Lancet journals)</h4>
+<p>journals including Lancet family of journals. Additionally, I have invited editorial roles in Journal of Human Hypertension (2017-) and PloS Global Public Health.</p>
+<ul>
+<li>Paper in <em>Kathmandu Post</em> (2015):<a href="http://hdl.handle.net/11343/129569"> link</a></li>
+<li>Paper in <em>Lancet</em> (2016;10029(387):1709-10):<a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(16)30305-1/fulltext"> link</a></li>
+<li>Paper in <em>Lancet Diabetes and Endocrinology</em> (2016 Dec;4(12):979-80):<a href="https://www.thelancet.com/journals/landia/article/PIIS2213-8587(16)30331-X/fulltext"> link</a></li>
+<li>Paper in <em>Lancet Infectious Disease</em> (2018 Mar 1;18(3):260):<a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(18)30090-2/fulltext"> link</a></li>
+<li>Paper in <em>WHO Bulletin</em> (2017 Feb 1; 95(2): 90–91):<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5327946/"> link</a></li>
+<li>Paper in <em>Nature</em> (2015 Aug;524(7563):35):<a href="https://www.nature.com/articles/524035c"> link</a></li>
+<li>Other papers in <em>Lancet Journals</em> (2015-2022):<a href="https://www.thelancet.com/action/doSearch?ContribAuthorRaw=Mishra,+Shiva%20Raj"> link</a></li>
+</ul>
+<p>More recently, I worked in two book chapters with colleagues, exploring nexus of poverty and governance in humanitarian context.</p>
+<ul>
+<li>Chapter <a href="https://link.springer.com/chapter/10.1007/978-3-319-65211-5_4"><em>Health and the Nepal Earthquakes: Ways Forward</em> </a>(pp. 63-74.2018.Palgrave Macmillan): In.”Evolving Narratives of Hazard and Risk”. Edited by Louise Bracken, Hanna A. Ruszczyk, Tom Robinson (Durham University)</a></li>
+<li>Chapter <em>"Covid-19 in Nepal and the Existential Predicaments of Poverty and Governance"</em>: In."COVID19 in South Asia” by Dinsha Mistree (Standford University) and Sumit Ganguly (Indiana University) (In-Press).</a></li>
+</ul>
+<hr />
+</div>
+
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
